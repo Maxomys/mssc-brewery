@@ -5,9 +5,13 @@ import com.myszor.msscbrewery.web.services.v2.BeerServiceV2;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @RequestMapping("/api/v2/beer")
@@ -49,5 +53,16 @@ public class BeerControllerV2 {
 
         beerService.deleteById(beerId);
     }
+
+//    @ExceptionHandler(ConstraintViolationException.class)
+//    public ResponseEntity<List<String>> validationErrorHandler(ConstraintViolationException e) {
+//        List<String> errors = new ArrayList<>(e.getConstraintViolations().size());
+//
+//        e.getConstraintViolations().forEach(constraintViolation -> {
+//            guano.add(constraintViolation.getPropertyPath() + " : " + constraintViolation.getMessage());
+//        });
+//
+//        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
+//    }
 
 }
