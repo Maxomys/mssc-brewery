@@ -1,4 +1,4 @@
-package com.myszor.msscbrewery.web.services;
+package com.myszor.msscbrewery.services;
 
 import com.myszor.msscbrewery.web.model.CustomerDto;
 import lombok.extern.slf4j.Slf4j;

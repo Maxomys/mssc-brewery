@@ -1,7 +1,7 @@
 package com.myszor.msscbrewery.web.controller;
 
 import com.myszor.msscbrewery.web.model.CustomerDto;
-import com.myszor.msscbrewery.web.services.CustomerService;
+import com.myszor.msscbrewery.services.CustomerService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

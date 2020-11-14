@@ -1,4 +1,4 @@
-package com.myszor.msscbrewery.web.services.v2;
+package com.myszor.msscbrewery.services.v2;
 
 import com.myszor.msscbrewery.web.model.v2.BeerDtoV2;
 import org.springframework.stereotype.Service;
