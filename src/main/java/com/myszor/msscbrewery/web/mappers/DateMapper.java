@@ -1,13 +1,13 @@
 package com.myszor.msscbrewery.web.mappers;
 
-import org.mapstruct.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 
-@Mapper
+@Component
 public class DateMapper {
 
     public OffsetDateTime asOffsetDateTime(Timestamp timestamp) {
